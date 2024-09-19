@@ -1,0 +1,462 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --maincolor: #c1ab84;
+    --mainfont: "Cormorant Garamond", serif;
+    --subfont: "Macondo", cursive;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(255, 255, 255, 0.341);
+    color: black;
+    z-index: 9999;
+}
+
+nav img {
+    width: 100px;
+    height: 100%;
+}
+
+.container {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .container {
+    display: flex;
+}
+
+nav .container .start {
+    width: 40%;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+nav .container .end {
+    width: 30%;
+}
+
+.NavList {
+    width: 100%;
+}
+
+.NavList ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.NavList ul li {
+    list-style: none;
+    color: black;
+}
+
+nav .container .end {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+
+}
+
+header {
+    background-image: url('res.jpeg');
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.Head {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 100vh;
+    color: white;
+    gap: 20px;
+}
+
+.Head img {
+    width: 400px;
+    height: 200px;
+}
+
+.Head h1 {
+    font-size: 60px;
+    font-weight: 200;
+    font-family: var(--mainfont);
+}
+
+.Head p {
+    font-family: var(--subfont);
+    font-size: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.buttons button {
+    padding: 15px;
+    border-radius: 10px;
+}
+
+button:hover {
+    background-color: var(--maincolor);
+}
+
+.buttons button:first-of-type {
+    background-color: var(--maincolor);
+
+}
+
+i {
+    color: #969696;
+}
+
+footer {
+    background-color: #353330;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    color: #969696;
+    ;
+}
+
+footer h3 {
+    color: white;
+}
+
+footer ul li {
+    border-bottom: 2px solid rgba(50, 49, 49, 0.773);
+}
+
+footer li a {
+    color: #969696;
+}
+
+footer .MainFooter {
+    background-color: #403d38;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.Sec {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Sec ul {
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.FooterSec4,
+.FooterSec1 {
+    width: 25%;
+}
+
+.FooterSec4 img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    opacity: 0.05;
+
+
+}
+
+.FooterSec4 ul li {
+    display: flex;
+    gap: 10px;
+}
+
+ul li:last-of-type {
+    border-bottom: none;
+}
+
+footer .SubFooter {
+    background-color: #353330;
+    display: flex;
+    justify-content: center;
+}
+
+footer .SubFooter .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icons .icon {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: #484540;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+}
+
+.icons .icon i {
+    font-size: 40px;
+    color: #8c8a86;
+
+}
+
+footer .SubFooter .container img {
+    height: 200px;
+    width: 400px;
+}
+
+.Info {
+    display: flex;
+    justify-content: center;
+}
+
+.Info p {
+    color: #353330;
+}
+
+.Info .container {
+    display: flex;
+    justify-content: center;
+}
+
+.ImageInfo {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.DataInfo {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.DataInfo ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.DataInfo li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.DataInfo ul li .item {
+    background-color: var(--maincolor);
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.DataInfo h2 {
+    font-size: 40px;
+    font-weight: 200;
+    font-family: var(--mainfont);
+}
+
+.DataInfo .PA {
+    color: var(--maincolor);
+    font-size: 25px;
+    font-family: var(--subfont);
+}
+
+.DataInfo .secondPA {
+    font-family: var(--mainfont);
+    font-weight: 100;
+}
+
+.ImageInfoREV img {
+    width: 400px;
+    height: 300px;
+}
+
+.Review {
+    display: flex;
+    justify-content: center;
+    height: 50vh;
+}
+
+.Review p {
+    color: #353330;
+}
+
+.Review .container {
+    display: flex;
+    justify-content: center;
+}
+
+.ImageInfoREV {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+.DataInfoREV {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+
+.DataInfoREV ul {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.DataInfoREV li {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.DataInfoREV h2,.Dishes h2 {
+    font-size: 40px;
+    font-weight: 200;
+    font-family: var(--mainfont);
+}
+
+.DataInfoREV .PA,.Dishes .PA{
+    color: var(--maincolor);
+    font-size: 25px;
+    font-family: var(--subfont);
+}
+
+.DataInfoREV .secondPA {
+    font-family: var(--mainfont);
+    font-weight: 100;
+}
+
+.IMage {
+    background-image: url('IMage.jpeg');
+    height: 50vh;
+    width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+}
+
+p {
+    white-space: pre-line;
+}
+
+.Dishes {
+    display: flex;
+    justify-content: center;
+}
+
+.Dishes .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.DishesTypes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.DishesTypes .Dish {
+    width: 30%;
+}
+
+.Dish img {
+    width: 300px;
+    border-radius: 5px;
+}
+.Dishes{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Dishes button{
+    padding: 10px;
+    background-color: var(--maincolor);
+    border-radius: 5px;
+}
+.OurTestimonials{
+    background-image: url('res.jpeg');
+    height: 10vh;
+    width: 100%;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.OurTestimonials h2{
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+.OurTestimonials p{
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+.OurTestimonials{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    height: 100vh;
+    color: white;
+    gap: 50px;
+}
+.OurTestimonials ul li {
+    font-size: 40px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    margin-bottom: 30px;
+}
+.OurTestimonials .Pb{
+    font-size: 15px;
+}
